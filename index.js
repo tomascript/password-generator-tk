@@ -56,7 +56,7 @@ $form.addEventListener('submit', e => {
 function generatePassword() {
   let text = '';
   let charCount = $numberField.value;
-  if (isNaN(charCount)) return;
+  if (charCount < 5 || charCount > 30 || isNaN(charCount)) return;
   let isNumber = document.querySelector('#is-number').checked;
   let isUpper = document.querySelector('#upper-case').checked;
   let isSpecial = document.querySelector('#is-special').checked;
