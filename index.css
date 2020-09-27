@@ -76,13 +76,13 @@ input[type='checkbox'] {
   border-radius: 3px;
   font-weight: bold;
   vertical-align: middle;
+  text-align: center;
 }
 
 .button-container {
   display: flex;
   justify-content: center;
-  text-align: center;
-  word-wrap: break-word;
+  word-break: break-all;
 }
 
 button {
