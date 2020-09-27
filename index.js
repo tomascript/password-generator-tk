@@ -2,7 +2,7 @@ const $numberField = document.querySelector('#pass-length');
 const $toolTip = document.querySelector('#tooltip');
 const $form = document.querySelector('.form');
 const $checkOptions = document.querySelectorAll('input[type="checkbox"]');
-const $resultField = document.querySelector('textarea');
+const $resultField = document.querySelector('#result');
 const defaultMessage = 'Enter length between 5 - 30';
 
 // 97-122 lowercase letters

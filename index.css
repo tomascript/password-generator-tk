@@ -68,9 +68,9 @@ input[type='checkbox'] {
   font-weight: 700;
 }
 
-.result {
+#result {
   margin: 1rem;
-  height: 5vh;
+  height: 2rem;
   width: 20rem;
   border: 1px solid black;
   border-radius: 3px;
