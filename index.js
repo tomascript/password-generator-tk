@@ -26,7 +26,8 @@ const asciiRanges = {
     ranges: [
       { startsAt: 33, count: 15 },
       { startsAt: 58, count: 7 },
-      { startsAt: 91, count: 6 }
+      { startsAt: 91, count: 6 },
+      { startsAt: 123, count: 4 }
     ]
   }
 };
@@ -112,7 +113,7 @@ function generateCharacter(isNumber, isUpper, isSpecial) {
         );
         break;
       case 1:
-        idx = Math.floor(Math.random() * 3);
+        idx = Math.floor(Math.random() * 4);
         temp = String.fromCharCode(
           Math.floor(Math.random() * asciiRanges.special.ranges[idx].count) +
             asciiRanges.special.ranges[idx].startsAt
@@ -137,7 +138,7 @@ function generateCharacter(isNumber, isUpper, isSpecial) {
         );
         break;
       case 1:
-        idx = Math.floor(Math.random() * 3);
+        idx = Math.floor(Math.random() * 4);
         temp = String.fromCharCode(
           Math.floor(Math.random() * asciiRanges.special.ranges[idx].count) +
             asciiRanges.special.ranges[idx].startsAt
@@ -173,7 +174,7 @@ function generateCharacter(isNumber, isUpper, isSpecial) {
             asciiRanges.lowerCase.ranges[0].startsAt
         ));
   } else if (isSpecial) {
-    idx = Math.floor(Math.random() * 3);
+    idx = Math.floor(Math.random() * 4);
     Math.round(Math.random())
       ? (temp = String.fromCharCode(
           Math.floor(Math.random() * asciiRanges.special.ranges[idx].count) +
