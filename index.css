@@ -84,7 +84,6 @@ input[type='checkbox'] {
 .button-container {
   display: flex;
   justify-content: center;
-  word-break: break-all;
 }
 
 button {
