@@ -81,6 +81,8 @@ input[type='checkbox'] {
 .button-container {
   display: flex;
   justify-content: center;
+  text-align: center;
+  word-wrap: break-word;
 }
 
 button {
@@ -93,4 +95,8 @@ button {
   border: 0;
   outline: none;
   cursor: pointer;
+}
+
+button:hover {
+  background-color: #343992;
 }
